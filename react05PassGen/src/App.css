@@ -1,0 +1,93 @@
+/* Ensure the root element takes up the full viewport height */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Center align the content inside the root element */
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Light background color for better contrast */
+}
+
+/* Style for the main container */
+.containr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Style for the box */
+.box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Style for the input box */
+.inputbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.inputbox input[type="text"] {
+  flex-grow: 1;
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.inputbox button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.inputbox button:hover {
+  background-color: #0056b3;
+}
+
+/* Style for the actions section */
+.actions {
+  display: flex;
+  flex-direction: column;
+}
+
+.actions > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.actions input[type="range"] {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.actions label {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.actions input[type="checkbox"] {
+  margin-right: 5px;
+}
