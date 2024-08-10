@@ -1,0 +1,31 @@
+/* Header.css */
+
+.navlink {
+    display: block;
+    padding: 0.5rem 1rem; /* Equivalent to py-2 pr-4 pl-3 */
+    transition: color 0.2s;
+  }
+  
+  .navlink-active {
+    color: #f97316; /* Orange-700 */
+    border-bottom: 1px solid #e5e7eb; /* Gray-100 */
+  }
+  
+  .navlink-inactive {
+    color: #374151; /* Gray-700 */
+  }
+  
+  .navlink:hover {
+    background-color: #f9fafb; /* Gray-50 */
+    color: #f97316; /* Orange-700 */
+  }
+  
+  .navlink-lg:hover {
+    background-color: transparent;
+  }
+  
+  .navlink-lg {
+    border: 0;
+    padding: 0; /* Equivalent to lg:p-0 */
+  }
+  

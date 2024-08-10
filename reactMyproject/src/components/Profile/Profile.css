@@ -1,0 +1,65 @@
+/* About Section */
+#about {
+    padding-top: 1.75rem; /* py-7 equivalent */
+    padding-bottom: 1.75rem; /* py-7 equivalent */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9; /* Light background color for the section */
+  }
+  
+  /* Container within the section */
+  .container {
+    width: 100%;
+    max-width: 1200px; /* Adjust based on your design */
+    padding: 0 1rem; /* Optional padding for responsiveness */
+  }
+  
+  /* About Content Grid */
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 1.5rem; /* Space between columns */
+    align-items: center; /* Align items vertically center */
+  }
+  
+  /* About Left (Image) */
+  .about-left img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem; /* Optional: rounded corners for the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for the image */
+  }
+  
+  /* About Right (Text) */
+  .about-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .about-right .title h2 {
+    font-size: 2rem; /* Adjust as needed */
+    margin-bottom: 1rem;
+    color: #333; /* Dark text color */
+  }
+  
+  .about-right .lead {
+    font-size: 1rem; /* Adjust as needed */
+    color: #666; /* Slightly lighter text color */
+    line-height: 1.6; /* Improve readability */
+    margin-bottom: 1rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-content {
+      grid-template-columns: 1fr; /* Stack columns vertically on smaller screens */
+      text-align: center; /* Center text alignment for smaller screens */
+    }
+  
+    .about-left {
+      margin-bottom: 1rem; /* Space below the image on smaller screens */
+    }
+  }
+  

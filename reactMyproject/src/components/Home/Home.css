@@ -1,0 +1,79 @@
+/* Header Container */
+#header {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    background: #f0f0f0; /* Light background color for the header */
+    color: #333; /* Dark text color */
+  }
+  
+  /* Container within the header */
+  .container {
+    width: 100%;
+    max-width: 1200px; /* Adjust based on your design */
+    padding: 0 1rem; /* Optional padding for responsiveness */
+  }
+  
+  /* Header Content */
+  .header-content {
+    text-align: center; /* Center text alignment */
+  }
+  
+  .header-content h1 {
+    font-size: 2.5rem; /* Adjust font size as needed */
+    margin: 0;
+    line-height: 1.2;
+  }
+  
+  .header-content h3 {
+    font-size: 1.5rem; /* Adjust font size as needed */
+    margin: 0.5rem 0 2rem; /* Margin between h3 and social links */
+  }
+  
+  /* Social Links */
+  .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center social links horizontally */
+  }
+  
+  .social-links li {
+    margin: 0 0.5rem; /* Spacing between social icons */
+  }
+  
+  .social-links a {
+    text-decoration: none;
+    color: #333; /* Icon color */
+    font-size: 1.5rem; /* Adjust icon size as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .social-links a:hover {
+    color: #007bff; /* Change color on hover (blue) */
+  }
+  
+  /* Optional for responsiveness */
+  @media (max-width: 768px) {
+    .header-content h1 {
+      font-size: 2rem; /* Smaller font size on smaller screens */
+    }
+  
+    .header-content h3 {
+      font-size: 1.25rem; /* Smaller font size on smaller screens */
+    }
+  
+    .social-links {
+      flex-direction: column; /* Stack icons vertically on smaller screens */
+    }
+  
+    .social-links li {
+      margin-bottom: 0.5rem; /* Space between icons */
+    }
+  }
+  
